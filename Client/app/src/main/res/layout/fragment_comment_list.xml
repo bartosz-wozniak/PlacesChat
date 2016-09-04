@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="false"
+    android:focusable="false"
+    android:clickable="false">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+    <ImageView
+        android:id="@+id/place_image"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop"
+        app:layout_collapseMode="parallax" />
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/comment_list_recycleview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/place_image"
+        android:layout_above="@+id/et_new_comment"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_new_comment"
+        android:layout_alignTop="@+id/btn_add_comment"
+        android:hint="@string/add_comment_hint"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/btn_add_comment"
+        android:layout_toStartOf="@+id/btn_add_comment"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_comment_button_text"
+        android:id="@+id/btn_add_comment"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/curtain"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_dark"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_margin="5dp" />
+</RelativeLayout>

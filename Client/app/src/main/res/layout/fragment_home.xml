@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+    <android.support.v7.widget.GridLayout
+        xmlns:grid="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tiles_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0.5dp"
+        grid:columnCount="2"
+        grid:rowCount="2">
+
+        <LinearLayout  grid:layout_column="0"
+            grid:layout_row="0"
+            android:background="@android:color/holo_blue_dark"
+            grid:layout_columnWeight="1"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/pub"
+                android:layout_gravity="center"
+                android:id="@+id/pubsImage"
+                android:contentDescription="@string/userimage" />
+            <Button
+                android:id="@+id/pubs_tile_map_btn"
+                android:layout_gravity="center"
+                android:text="@string/wyszukaj_na_mapie"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@android:color/transparent"
+                />
+            <Button
+                android:id="@+id/pubs_tile_list_btn"
+                android:layout_gravity="center"
+                android:text="@string/przejdz_do_listy"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@android:color/transparent"
+                />
+        </LinearLayout>
+
+        <LinearLayout  grid:layout_column="1"
+            grid:layout_row="0"
+            android:background="@android:color/holo_orange_dark"
+            grid:layout_columnWeight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/club"
+                android:layout_gravity="center"
+                android:id="@+id/clubsImage"
+                android:contentDescription="@string/userimage" />
+            <Button
+                android:id="@+id/clubs_tile_map_btn"
+                android:layout_gravity="center"
+                android:text="@string/wyszukaj_na_mapie"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@android:color/transparent"
+                />
+            <Button
+                android:id="@+id/clubs_tile_list_btn"
+                android:layout_gravity="center"
+                android:text="@string/przejdz_do_listy"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <LinearLayout  grid:layout_column="0"
+            grid:layout_row="1"
+            android:background="@android:color/holo_green_dark"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/restaurant"
+                android:layout_gravity="center"
+                android:id="@+id/restaurantsImage"
+                android:contentDescription="@string/userimage" />
+            <Button
+                android:id="@+id/restaurants_tile_map_btn"
+                android:layout_gravity="center"
+                android:text="@string/wyszukaj_na_mapie"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@android:color/transparent"
+                />
+            <Button
+                android:id="@+id/restaurants_tile_list_btn"
+                android:layout_gravity="center"
+                android:text="@string/przejdz_do_listy"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <LinearLayout  grid:layout_column="1"
+            grid:layout_row="1"
+            grid:layout_columnWeight="1"
+            android:background="@android:color/holo_purple"
+            android:orientation="vertical"
+            grid:layout_rowWeight="1">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/gym"
+                android:layout_gravity="center"
+                android:id="@+id/allImage"
+                android:contentDescription="@string/userimage" />
+            <Button
+                android:id="@+id/gym_tile_map_btn"
+                android:layout_gravity="center"
+                android:text="@string/wyszukaj_na_mapie"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@android:color/transparent"
+                />
+            <Button
+                android:id="@+id/gym_tile_list_btn"
+                android:layout_gravity="center"
+                android:text="@string/przejdz_do_listy"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@android:color/transparent"
+                />
+
+        </LinearLayout>
+    </android.support.v7.widget.GridLayout>
+</LinearLayout>

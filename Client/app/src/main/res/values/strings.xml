@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Places</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyD6culN8KGSJoStJbLsEuSbAXm6D5qPX0c</string>
+    <string name="google_places_key">AIzaSyAbTSDsXIPJHu73Qz04Be0y2p5MlA79eFw</string>
+    <string name="title_activity_pub_detailed_view">Informacje dodatkowe</string>
+    <string name="add_comment_hint">Dodaj komentarz</string>
+    <string name="add_comment_button_text">Dodaj</string>
+    <string name="userimage">userImage</string>
+    <string name="home_fragment">Strona główna</string>
+    <string name="map_fragment">Mapa</string>
+    <string name="user_profile_fragment">Twój Profil</string>
+    <string name="place_details_fragment">Informacje dodatkowe</string>
+    <string name="place_list_fragment">Miejsca</string>
+    <string name="comment_list_fragment">Komentarze</string>
+    <string name="wyszukaj_na_mapie">Wyszukaj na mapie</string>
+    <string name="przejdz_do_listy">Przejdz do listy</string>
+    <string name="warsaw_center">52.234183,20.996994</string>
+    <string name="search">Wyszukaj</string>
+    <string name="more">Więcej</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Witaj</string>
+    <string name="google_location_type_restaurant">restaurant</string>
+    <string name="google_location_type_bar">bar</string>
+    <string name="google_location_type_club">night_club</string>
+    <string name="google_location_type_gym">gym</string>
+    <string name="comment_restriction">Komentarz nie może być pusty</string>
+    <string name="login_failed">Logowanie nie powiodło się</string>
+    <string name="login_restriction">Login musi mieć przynajmniej 4 znaki</string>
+    <string name="password_restriction">Hasło musi mieć od 4 do 10 znaków</string>
+    <string name="registration_failed">Rejestracja nie powiodła się</string>
+    <string name="wrong_email">Adres e-mail jest niepoprawny</string>
+</resources>

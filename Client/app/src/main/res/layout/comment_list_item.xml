@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/userImageWrapper"
+        android:layout_margin="@dimen/text_margin" />
+    <RelativeLayout
+        android:layout_width="110dp"
+        android:id="@+id/userImageWrapper"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/user"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tvUsername"
+            android:id="@+id/userCommentImage"
+            android:contentDescription="@string/userimage" />
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="uzytkownik"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tvCommentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_below="@+id/userCommentImage"
+            android:text="data"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>
