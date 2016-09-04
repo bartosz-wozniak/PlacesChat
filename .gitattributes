@@ -62,4 +62,4 @@
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
 
-Server/PlaceReviewerServer.Web/Scripts/* linguist-vendored
+Server/PlaceReviewerServer.Web/scripts/* linguist-vendored
