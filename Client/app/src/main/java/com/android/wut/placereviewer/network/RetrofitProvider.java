@@ -24,7 +24,7 @@ public class RetrofitProvider {
 
     public ICommentsService GetCommentsServices(){
         return new Retrofit.Builder()
-                .baseUrl("http://placereviewerserverweb.azurewebsites.net/api/Comment/")
+                .baseUrl("http://placeschat.azurewebsites.net/api/Comment/")
                 .addConverterFactory(MoshiConverterFactory.create())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .client(getOkHttpClient())
@@ -34,7 +34,7 @@ public class RetrofitProvider {
 
     public IUsersService GetUsersServices(){
         return new Retrofit.Builder()
-                .baseUrl("http://placereviewerserverweb.azurewebsites.net/api/User/")
+                .baseUrl("http://placeschat.azurewebsites.net/api/User/")
                 .addConverterFactory(MoshiConverterFactory.create())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .client(getOkHttpClient())
